@@ -1,12 +1,19 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 const Home = () => {
   return (
-    <div className='home container'>
-      <h2>Welcome to Pizza Joint</h2>
+    <motion.div className='home container'
+    animate={{  }}
+    >
+      <motion.h2 animate={{  }}>
+        Welcome to Pizza Joint
+      </motion.h2>
       <Link to="/base">
-        <button>Create Your Pizza</button>
+        <motion.button whileHover={{ scale: 1.2 }}>
+          Create Your Pizza
+        </motion.button>
       </Link>
-    </div>
+    </motion.div>
   )
 }
 

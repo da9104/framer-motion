@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 const Base = ({ addBase, pizza }) => {
-  const bases = ['classic', 'thin & crispy', 'thick crust']
+  const bases = ['Classic', 'Thin & Crispy', 'Thick Crust']
 
   return (
     <div className="base container">
@@ -17,7 +17,7 @@ const Base = ({ addBase, pizza }) => {
       </ul>
 
         {pizza.base && (
-            <div>
+            <div className="next">
                 <Link to='/toppings'>
                     <button>Next</button>
                 </Link>
